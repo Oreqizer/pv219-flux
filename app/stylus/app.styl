@@ -1,2 +1,20 @@
+@import "./variables.styl"
+
+// modules
+@import "./navbar.styl"
+@import "./chat.styl"
+
+// normalization
 body
-    background red
+    padding-top 70px
+
+    &:after
+        content ""
+        position absolute
+        top 0
+        left 0
+        width 100%
+        height 100%
+        opacity .25
+        z-index -1
+        background url("../images/bg.png")

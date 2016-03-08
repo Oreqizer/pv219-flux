@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Life Invader</title>
+
+    <!-- favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+
+    <!-- styles -->
+    <link rel="stylesheet" type="text/css" href="app.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top" id="navbar">
+      <div class="container">
+
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">
+            <span><b>Life</b> Invader</span>
+          </a>
+        </div>
+
+        <p class="navbar-text navbar-right">
+          Messages:
+          <a
+              data-messages="0"
+              class="navbar-link"
+              id="li-messages-navbar"
+          >
+            0
+          </a>
+        </p>
+
+      </div>
+    </nav>
+
+      <main id="chat">
+        <div class="container">
+          <div class="li-chat-windows">
+
+            <div
+                class="li-chat-window"
+                 data-name="chat1"
+                 data-unread="false"
+            >
+              <div class="li-chat-header">
+                <span>Chat 1</span>
+              </div>
+
+              <div class="li-chat-messages">
+                <!-- messages -->
+              </div>
+            </div>
+
+            <div
+                class="li-chat-window"
+                data-name="chat2"
+                data-unread="false"
+            >
+              <div class="li-chat-header">
+                <span>Chat 2</span>
+              </div>
+
+              <div class="li-chat-messages">
+                <!-- messages -->
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </main>
+
+    <!-- scripts -->
+    <script src="bundle.js"></script>
+  </body>
+</html>

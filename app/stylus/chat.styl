@@ -1,0 +1,43 @@
+#chat
+    position fixed
+    bottom 0
+    width 100%
+
+    .li-chat-windows
+        position relative
+
+    .li-chat-window
+        position relative
+        float right
+        height 500px
+        width 300px
+        margin-left 20px
+        background white
+
+    .li-chat-header
+        padding 5px
+        width 100%
+        background $li-red
+        border solid 1px $li-red
+
+        > span
+            color #EEE
+            height h = 20px
+            line-height h
+            vertical-align middle
+
+    .li-chat-messages
+        overflow-y auto
+        height 100%
+        width 100%
+        padding 5px
+
+    .li-message
+        display block
+        height h = 35px
+        padding p = 5px
+        line-height (h - 2*p)
+        vertical-align middle
+        margin-top 5px
+        background #eee
+        border solid 1px #ddd

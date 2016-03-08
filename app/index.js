@@ -5,6 +5,19 @@ import immutableDevtools from "immutable-devtools";
 
 immutableDevtools(immutable);
 
+// app
+import "jquery";
+import "bootstrap";
+
+import "./js/app.js";
+
+// styles
+import "bootstrap-css";
+import "bootstrap-theme";
 import "./stylus/app.styl";
 
-console.log("test")
+import "./index.html";
+import "./favicon.ico";
+
+// images
+import "./images/lifeinvader-logo.png";

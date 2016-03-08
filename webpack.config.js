@@ -4,6 +4,7 @@ require("babel-register");
 // node
 const path = require("path");
 // webpack
+const webpack = require("webpack");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 // setup
@@ -22,7 +23,7 @@ const loaders = [
     { test: /\.js$/, loader: "babel", exclude: /node_modules/},
     { test: /\.styl$/, loader: ExtractTextPlugin.extract("style", "css!stylus") },
     { test: /\.css$/, loader: ExtractTextPlugin.extract("style", "css") },
-    { test: /\.html$/, loader: "html" },
+    { test: /\.html$/, loader: "file?name=[name].[ext]" },
     { test: /\.ico$/i, loader: "file?name=[name].[ext]" },
     {
         test: /\.(jpe?g|png|gif|svg)$/i,
@@ -32,13 +33,21 @@ const loaders = [
 ];
 
 const plugins = [
-    new ExtractTextPlugin(CSS)
+    new ExtractTextPlugin(CSS),
+    new webpack.ProvidePlugin({
+        $: "jquery",
+        jQuery: "jquery"
+    })
 ];
 
 const resolve = {
     root: [
         path.resolve(APP)
-    ]
+    ],
+    alias: {
+        "bootstrap-css": "bootstrap/dist/css/bootstrap.css",
+        "bootstrap-theme": "bootstrap/dist/css/bootstrap-theme.css"
+    }
 };
 
 // webpack
