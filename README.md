@@ -11,10 +11,10 @@ There are two versions:
 
 Install **node** on your system.
 
-Run `npm i`. If you don't have **webpack* installed, install it with `npm i -g webpack`.
+Run `npm i`. If you don't have **webpack** installed, install it with `npm i -g webpack`.
 
 * **Mac/Linux:** `npm start`
-* **Windows** `webpack`, then `node server.js`
+* **Windows:** `webpack`, then `node server.js`
 
 Then visit `http://localhost:1337`
 
