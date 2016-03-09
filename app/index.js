@@ -9,7 +9,8 @@ immutableDevtools(immutable);
 import "jquery";
 import "bootstrap";
 
-import "./js/app.js";
+// import "./js/app.js";
+import "./js/flux.js";
 
 // styles
 import "bootstrap-css";
